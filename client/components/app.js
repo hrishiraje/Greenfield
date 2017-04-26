@@ -12,13 +12,14 @@ class App extends React.Component {
   render () {
     console.log('TrackList ', this.state.trackList);
 
-    // return (
-    //   <div>
-    //     <TrackList trackList={this.state.trackList}/>
-    //   </div>
-    // )
+    return (
+      <div>
+        <div>This is the main app</div>
+        {/*<TrackList trackList={this.state.trackList}/>*/}
+      </div>
+    );
   }
 
-};
+}
 
 export default App;

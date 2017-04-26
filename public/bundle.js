@@ -9574,18 +9574,20 @@ var App = function (_React$Component) {
     value: function render() {
       console.log('TrackList ', this.state.trackList);
 
-      // return (
-      //   <div>
-      //     <TrackList trackList={this.state.trackList}/>
-      //   </div>
-      // )
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          null,
+          'This is the main app'
+        )
+      );
     }
   }]);
 
   return App;
 }(_react2.default.Component);
-
-;
 
 exports.default = App;
 
@@ -9613,16 +9615,16 @@ var _reactDom = __webpack_require__(82);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _app = __webpack_require__(81);
+var _App = __webpack_require__(81);
 
-var _app2 = _interopRequireDefault(_app);
+var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 $.get('/tracks', function (data) {
   var JSONdata = JSON.parse(data);
 
-  _reactDom2.default.render(_react2.default.createElement(_app2.default, { trackList: JSONdata }), document.getElementById('app'));
+  _reactDom2.default.render(_react2.default.createElement(_App2.default, { trackList: JSONdata }), document.getElementById('app'));
 });
 
 /***/ }),
