@@ -1,6 +1,8 @@
 var request = require('request');
-var key = process.env.SC_CLIENT_ID;
-var secret = process.env.SC_CLIENT_SECRET;
+// var key = process.env.SC_CLIENT_ID;
+var key = 'm875UgIcncRleDuMCgO642xcqCe8zvFD';
+var secret = '1l02nmg7QaSTC4cjNxnSY4TSKLnGUo8r';
+// var secret = process.env.SC_CLIENT_SECRET;
 var axios = require('axios');
 var request = require('request');
 
@@ -96,6 +98,7 @@ module.exports = {
           callback(error, null);
         } else {
           var token = JSON.parse(body).access_token;
+          console.log('model got the following information from the server ', body);
           
           var feedOptions = {
             url: 'https://api.soundcloud.com/me/activities/tracks/affiliated',
