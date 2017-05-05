@@ -1,6 +1,8 @@
 var model = require('../models/models');
 var url = require('url');
 
+//controller methods defined here
+
 module.exports = {
   tracks: {
     get: function(req, res) {
