@@ -41,7 +41,7 @@ module.exports = {
       }
 
       if (qs.username) {
-        usernameQS += '(collection[i].origin.user["username"] === ' + qs.username + ')';
+        usernameQS += '(collection[i].origin.user["username"] === "' + qs.username + '")';
         //change this to have an or for multiple artists if needed 
       }
 
